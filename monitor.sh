@@ -3,8 +3,10 @@
 now=`date -u -d"+8 hour" +'%Y-%m-%d %H:%M:%S'`
 #cpu use threshold
 cpu_warn='7'
+# the CPU value is set to 7, means if the CPU usage is higher than 7% then it will trigger CPU alert. Please change to higher value as or as per your requirements.
  #mem idle threshold
 mem_warn='150'
+# the Memory value is set to 150MB, means if the Memory availability is lesser than 150MB then it will trigger an alert.
 client="Client Name"
 environment="Production"
 public_ip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
